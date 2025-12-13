@@ -6,40 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign in</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
 </head>
 
-<body >
-    <main class="bg-[#1656AD]">
+<body>
+    <a href="Home.html">
+    <div class="flex justify-center items-center w-[5em] h-[5em] m-10 rounded-full border-5 border-gray-600">
+        <img class="w-10 h-10" src="/img/arrow.png">
+    </div>
+    </a>
+    <main class="bg-[#4996ED] w-[50%] h-[68em] ml-[10em] p-20 rounded-4xl">
         <div>
-            <nav class="flex justify-between items-center p-10">
-                <h3 class="text-4xl text-white font-bold italic pl-30">Kaysen.</h3>
-
-                <ul class="flex gap-15 font-semibold text-Inter pr-10">
-                    <li><a href="Home.html" class="hover:text-white">Home</a></li>
-                    <li><a href="Shop.html" class="hover:text-white">Shop</a></li>
-                    <li><a href="About_us.html" class="hover:text-white ">About Us</a></li>
-                    <li><a href="Service.html" class="hover:text-white">Services</a></li>
-                    <li><a href="Blog.html" class="hover:text-white">Blog</a></li>
-                    <li><a href="Contact.html" class="hover:text-white">Contact Us</a></li>
-                    <li><a href="Sign_in.html" class="text-white hover:text-white underline decoration-[#DAA520] decoration-2"><img src="img/pf.png" alt=""></a></li>
-                    <li><a href="Cart.html" class="hover:text-white"><img src="img/cart.png" alt=""></a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="pl-25 font-bold text-white">
-            <h1 class="text-5xl mt-40">Modern Clothing</h1>
-            <h1 class="text-5xl mt-2">Design</h1>
-            <p class="mt-7">We are working hard to keep our customers happy with our</p>
-            <p class="mt-0">clothes. The ideal clothing store for you today!</p>
-            <div class="flex mt-8 gap-3">
-                <a href="Shop.html" class="bg-[#3777BF] px-8 py-3 font-bold text-black rounded-full hover:bg-[#4996ED] transition cursor-pointer">
-                            Shop Now
-                        </a>
+            <h3 class="text-white text-5xl font-bold text-center font-Roboto">Create an account</h3>
+            <h1 class="flex text-white text-3xl justify-center mt-5 font-thin">Already have an acccount?
+                <p class="ml-5 text-black font-thin">Login</p>
+            </h1>
+            <div class="flex justify-center mt-[8em] text-xl">
+                <div class="font-bold">
+                    <label for="fName">First name</label><br>
+                    <input type="text" id="fName" name="fName" required>
+                    <hr class="w-[100%]">
+                </div>
+                <div class="font-bold ml-[10em]">
+                    <label for="lName">Last name</label><br>
+                    <input type="text" id="lName" name="lName" required>
+                    <hr class="w-[100%]">
+                </div>
+            </div>
+            <div class="font-bold ml-[2.5em] text-xl mt-[1em]">
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" required>
+                <hr class="w-[94%]">
+            </div>
+            <div class="font-bold ml-[2.5em] text-xl mt-[2em]">
+                <label for="password">Password</label><br>
+                <input type="password" id="password" name="password" required>
+                <hr class="w-[94%]">
+            </div>
+            <div class="flex justify-center mt-[4em]">
                 <button
-                    class="p-2.5 pr-7 pl-7 grid font-bold text-white rounded-3xl hover:border-white cursor-pointer border-3 border-gray-500">Explore
-                </button>
-
+                    class="text-white text-3xl font-bold bg-blue-800 px-[3em] py-5 rounded-[1em] hover:cursor-pointer hover:bg-blue-700  hover:border-blue-500 transition cursor-pointer border-2 border-blue-800">Create
+                    account</button>
+            </div>
+            <div class="mt-[5em] flex justify-center ">
+                <hr class="w-[30%] ml-10 mr-5">
+                <p class="text-2xl font-bold">Or register with</p>
+                <hr class="w-[30%] ml-10">
+            </div>
+            <div class="flex justify-center mt-[2em] text-center ">
+                <button class="flex  px-[3em] py-[12px] text-3xl rounded-[1em] ml-[1em] hover:cursor-pointer hover:bg-gray-400  hover: transition cursor-pointer border-2 border-gray-800 "><img
+                        src="/img/Google.png" class="w-[1em] h-[1em] mr-5 mt-1">Google</button>
+                <button class="flex  px-[3em] py-[12px] text-3xl rounded-[1em] ml-[1em] hover:cursor-pointer hover:bg-gray-400  hover: transition cursor-pointer border-2 border-gray-800"><img
+                        src="/img/Apple.png" class="w-[1em] h-[1em] mr-5 mt-1">Google</button>
             </div>
         </div>
     </main>
