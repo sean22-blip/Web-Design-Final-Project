@@ -15,41 +15,28 @@
     </div>
     </a>
     <main class="bg-[#4996ED] w-[50%] h-[68em] ml-[10em] p-20 rounded-4xl">
-        <form>
-            <h3 class="text-white text-5xl font-bold text-center font-Roboto">Create an account</h3>
-            <h1 class="flex text-white text-3xl justify-center mt-5 font-thin">Already have an acccount?
-                <p class="ml-5 text-black font-thin hover:text-blue-700 underline"><a href="Login.html">Login</a></p>
-            </h1>
-            <div class="flex justify-center mt-[8em] text-xl">
-                <div class="font-bold">
-                    <label for="fName">First name</label><br>
-                    <input type="text" id="fName" name="fName" >
-                    <hr class="w-[100%]">
-                </div>
-                <div class="font-bold ml-[10em]">
-                    <label for="lName">Last name</label><br>
-                    <input type="text" id="lName" name="lName" >
-                    <hr class="w-[100%]">
-                </div>
-            </div>
-            <div class="font-bold ml-[2.5em] text-xl mt-[1em]">
+        <div>
+            <h3 class="text-white text-5xl font-bold text-center font-Roboto">Login</h3>
+            <div class="font-bold ml-[2.5em] text-xl mt-[5em]">
                 <label for="email">Email</label><br>
-                <input type="email" id="email" name="email" >
+                <input type="email" id="email" name="email">
                 <hr class="w-[94%]">
             </div>
             <div class="font-bold ml-[2.5em] text-xl mt-[2em]">
                 <label for="password">Password</label><br>
-                <input type="password" id="password" name="password" >
+                <input type="password" id="password" name="password">
                 <hr class="w-[94%]">
             </div>
+            <form action="Home.html">
             <div class="flex justify-center mt-[4em]">
                 <button type="submit"
-                    class="text-white text-3xl font-bold bg-blue-800 px-[3em] py-5 rounded-[1em] hover:cursor-pointer hover:bg-blue-700  hover:border-blue-500 transition cursor-pointer border-2 border-blue-800">Create
-                    account</button>
+                    class="text-white text-3xl font-bold bg-blue-800 px-[3em] py-5 rounded-[1em] hover:cursor-pointer hover:bg-blue-700  hover:border-blue-500 transition cursor-pointer border-2 border-blue-800">Login
+                    </button>
             </div>
+            </form>
             <div class="mt-[5em] flex justify-center ">
                 <hr class="w-[30%] ml-10 mr-5">
-                <p class="text-2xl font-bold">Or register with</p>
+                <p class="text-2xl font-bold">Continue with</p>
                 <hr class="w-[30%] ml-10">
             </div>
             <div class="flex justify-center mt-[2em] text-center ">
@@ -58,7 +45,7 @@
                 <button class="flex  px-[3em] py-[12px] text-3xl rounded-[1em] ml-[1em] hover:cursor-pointer hover:bg-gray-400  hover: transition cursor-pointer border-2 border-gray-800"><img
                         src="/img/Apple.png" class="w-[1em] h-[1em] mr-5 mt-1">Google</button>
             </div>
-        </form>
+        </div>
     </main>
     <script src="Index.js"></script>
 </body>
