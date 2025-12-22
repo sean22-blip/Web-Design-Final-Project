@@ -10,28 +10,6 @@
 </head>
 
 <body class="bg-gray-300">
-    <!-- <div>
-             <div class="flex ">
-                <h1 class="mt-[5em] ml-[5em] font-bold text-xl">Shopping Cart</h1>
-            </div>//temp
-            <nav class="flex justify-between items-center p-10">
-                <h3 class="text-4xl text-white font-bold italic pl-30">Kaysen.</h3>
-
-                <ul class="flex gap-15 font-semibold text-Inter pr-10">
-                    <li><a href="Home.html" class="hover:text-white">Home</a></li>
-                    <li><a href="Shop.html" class="hover:text-white">Shop</a></li>
-                    <li><a href="About_us.html" class="hover:text-white ">About Us</a></li>
-                    <li><a href="Service.html" class="hover:text-white">Services</a></li>
-                    <li><a href="Blog.html" class="hover:text-white">Blog</a></li>
-                    <li><a href="Contact.html" class="hover:text-white">Contact Us</a></li>
-                    <li><a href="Sign_in.html" class="hover:text-white"><img src="img/pf.png" alt=""></a></li>
-                    <li><a href="Cart.html" class="hover:text-white text-white underline decoration-[#DAA520] decoration-2"><img src="img/cart.png" alt=""></a></li>
-                </ul>
-            </nav>
-        </div> -->
-    <!-- //                    <div class="flex bg-gray-500 w-[10em] h-[40em] flex-end"></div> -->
-
-    <!-- <div class="ml-10 text-5xl">←</div> -->
     <main class="flex items-center justify-center mt-50 ">
         <div class="bg-white w-[50em] h-[45em] ">
             <div class="flex gap-[30em] ml-10 font-bold mt-[4em] ">
@@ -54,12 +32,13 @@
                     <p class="ml-[11em]">$0.00</p>
                 </div>
                 <p class="text-gray-700 font-bold mt-[1em]">SHIPPING</p>
-                <select class="bg-white font-bold text-gray-400 pl-2 pt-2 pb-2 pr-12 mt-[1em]  hover:cursor-pointer">
-                    <option class="">Standard Delivery - $5.00</option>
-                    <option class="">Fast Shipping - $10.00</option>
-                    <option class="">Express delivery - $15.00</option>
+                <select class="bg-white font-bold text-gray-400 pl-2 pt-2 pb-2 pr-12 mt-[1em]  hover:cursor-pointer" id="item" onchange="updateTotal()">
+                    <option id="standard" value="5.00">Standard Delivery - $5.00</option>
+                    <option id="fast" value="10.00">Fast Shipping - $10.00</option>
+                    <option id="express" value="15.00">Express delivery - $15.00</option>
                 </select>
                 <p class="text-gray-700 font-bold mt-[1em]">INTERNATIONAL SHIPPING</p>
+                <label for="item"></label>
                 <select class="bg-white font-bold text-gray-400 pl-2 pt-2 pb-2 pr-[6.5em] mt-[1em] hover:cursor-pointer">
                     <option class="">Cambodia</option>
                     <option>India</option>
@@ -76,12 +55,15 @@
             </div>
             <hr class="w-[80%] ml-[2em] mt-[2em] text-gray-400  ">
             <div class="flex ml-10 mt-[2em] font-bold text-gray-700 ">
-                <p>TOTAL COST</p>
-                <p class="ml-[7em]">$0.00</p>
+                <p class="">Total:</p>
+                <p class="ml-[9em]">$</p>
+                <p id="total">0.00</p>
             </div>
+            <a href="qr.html"> 
             <div class="flex items-center justify-center text-center mt-[2em] text-sm">
                 <button class="bg-[#7c3aed] text-white font-semibold px-[7em] py-3 text-center hover:cursor-pointer hover:bg-[#5b21b6]  hover:border-white transition cursor-pointer border-2 border-[#6d28d9]">CHECKOUT</button>
             </div>
+            </a>
         </div>
     </main>
     <script src="Cart.js"></script>
