@@ -5,54 +5,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign in</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-    <div class="flex  gap-32">
+    <div class="flex flex-col lg:flex-row gap-10 lg:gap-32 px-4 lg:px-0">
 
-        <div class="flex ">
+        <div class="flex flex-col lg:flex-row items-start lg:items-start">
             
-            <a href="Home.html">
-            <div class="flex justify-center items-center w-[5em] h-[5em]   rounded-full border-5 border-gray-600">
-                <img class="w-10 h-10" src="/img/arrow.png">
+            <a href="Home.html" class="mb-6 lg:mb-0">
+            <div class="flex justify-center items-center w-[4em] h-[4em] lg:w-[5em] lg:h-[5em] rounded-full border-5 border-gray-600">
+                <img class="w-8 h-8 lg:w-10 lg:h-10" src="/img/arrow.png">
             </div>
             </a>
-            <main class="bg-[#4996ED]  ml-[10em] p-20 rounded-4xl">
+            <main class="bg-[#4996ED] lg:ml-[10em] p-6 md:p-10 lg:p-20 rounded-4xl w-full lg:w-auto">
                 <div>
-                    <h3 class="text-white text-5xl font-bold text-center font-Roboto">Login</h3>
-                    <div class="font-bold ml-[2.5em] text-xl mt-[5em]">
+                    <h3 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold text-center font-Roboto">Login</h3>
+                    <div class="font-bold lg:ml-[2.5em] text-lg md:text-xl mt-10 lg:mt-[5em]">
                         <label for="email">Email</label><br>
-                        <input type="email" id="email" class="outline-none" name="email">
+                        <input type="email" id="email" class="outline-none w-full lg:w-auto bg-transparent" name="email">
                         <hr class="w-[94%]">
                     </div>
-                    <div class="font-bold ml-[2.5em] text-xl mt-[2em]">
+                    <div class="font-bold lg:ml-[2.5em] text-lg md:text-xl mt-8 lg:mt-[2em]">
                         <label for="password">Password</label><br>
-                        <input type="password" id="password" class="outline-none" name="password">
+                        <input type="password" id="password" class="outline-none w-full lg:w-auto bg-transparent" name="password">
                         <hr class="w-[94%]">
                     </div>
                     <form action="Home.html">
-                    <div class="flex justify-center mt-[4em]">
+                    <div class="flex justify-center mt-10 lg:mt-[4em]">
                         <button type="submit"
-                            class="text-white text-3xl font-bold bg-blue-800 px-[3em] py-5 rounded-[1em] hover:cursor-pointer hover:bg-blue-700  hover:border-blue-500 transition cursor-pointer border-2 border-blue-800">Login
+                            class="text-white text-xl md:text-2xl lg:text-3xl font-bold bg-blue-800 px-8 md:px-12 lg:px-[3em] py-4 lg:py-5 rounded-[1em] hover:cursor-pointer hover:bg-blue-700 hover:border-blue-500 transition cursor-pointer border-2 border-blue-800">Login
                             </button>
                     </div>
                     </form>
-                    <div class="mt-[5em] flex   ">
-                        <hr class="w-[30%] ml-10 mr-5">
-                        <p class="text-2xl font-bold">Continue with</p>
-                        <hr class="w-[30%] ml-10">
+                    <div class="mt-10 lg:mt-[5em] flex items-center">
+                        <hr class="w-[20%] md:w-[30%] ml-2 md:ml-10 mr-3 md:mr-5">
+                        <p class="text-base md:text-xl lg:text-2xl font-bold whitespace-nowrap">Continue with</p>
+                        <hr class="w-[20%] md:w-[30%] ml-3 md:ml-10">
                     </div>
-                    <div class="flex justify-center mt-[2em] text-center ">
-                        <button class="flex  px-[3em] py-[12px] text-3xl rounded-[1em] ml-[1em] hover:cursor-pointer hover:bg-gray-400  hover: transition cursor-pointer border-2 border-gray-800 "><img
-                                src="/img/Google.png" class="w-[1em] h-[1em] mr-5 mt-1">Google</button>
-                        <button class="flex  px-[3em] py-[12px] text-3xl rounded-[1em] ml-[1em] hover:cursor-pointer hover:bg-gray-400  hover: transition cursor-pointer border-2 border-gray-800"><img
-                                src="/img/Apple.png" class="w-[1em] h-[1em] mr-5 mt-1">Apple</button>
+                    <div class="flex flex-col sm:flex-row justify-center mt-6 lg:mt-[2em] text-center gap-4">
+                        <button class="flex items-center justify-center px-6 md:px-10 lg:px-[3em] py-3 lg:py-[12px] text-xl md:text-2xl lg:text-3xl rounded-[1em] hover:cursor-pointer hover:bg-gray-400 transition cursor-pointer border-2 border-gray-800"><img
+                                src="/img/Google.png" class="w-6 h-6 lg:w-[1em] lg:h-[1em] mr-3 lg:mr-5">Google</button>
+                        <button class="flex items-center justify-center px-6 md:px-10 lg:px-[3em] py-3 lg:py-[12px] text-xl md:text-2xl lg:text-3xl rounded-[1em] hover:cursor-pointer hover:bg-gray-400 transition cursor-pointer border-2 border-gray-800"><img
+                                src="/img/Apple.png" class="w-6 h-6 lg:w-[1em] lg:h-[1em] mr-3 lg:mr-5">Apple</button>
                     </div>
                 </div>
             </main>
         </div>
-        <img src="img/image 3.png" alt="">
+        <img src="img/image 3.png" class="hidden lg:block w-full max-w-2xl" alt="">
     </div>
     <script src="Index.js"></script>
 </body>

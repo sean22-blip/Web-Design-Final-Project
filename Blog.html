@@ -5,17 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
 
 <body>
-    <main class="bg-[#1656AD] h-[765px]">
+    <main class="bg-[#1656AD] h-auto md:h-[765px]">
         <div>
-            <nav class="flex justify-between items-center ">
-                <h3 class="text-4xl text-white font-bold italic p-10 pl-30">Kaysen.</h3>
+            <nav class="flex flex-col md:flex-row justify-between items-center p-4 md:p-0">
+                <h3 class="text-3xl md:text-4xl text-white font-bold italic md:p-10 md:pl-30 mb-4 md:mb-0">Kaysen.</h3>
 
-                <ul class="flex gap-15 font-semibold text-Inter pr-10">
+                <ul class="flex flex-wrap justify-center gap-4 md:gap-15 font-semibold text-Inter md:pr-10">
                     <li><a href="Home.html" class="hover:text-white">Home</a></li>
                     <li><a href="Shop.html" class="hover:text-white">Shop</a></li>
                     <li><a href="About_us.html" class="hover:text-white ">About Us</a></li>
@@ -28,14 +28,14 @@
                 </ul>
             </nav>
         </div>
-        <div class="flex pl-30 justify-between">
-            <div class=" font-bold text-white">
-                <h1 class="text-[48px] mt-40">Blog</h1>
-                <p class="mt-7">Welcome to our fashion blog — where style meets inspiration. This <br>
+        <div class="flex flex-col lg:flex-row px-4 md:pl-30 justify-between items-center">
+            <div class="font-bold text-white text-center lg:text-left mb-10 lg:mb-0">
+                <h1 class="text-3xl md:text-[48px] mt-20 md:mt-40">Blog</h1>
+                <p class="mt-7 text-sm md:text-base">Welcome to our fashion blog — where style meets inspiration. This
                     is the space where trends, creativity, and lifestyle come together.</p>
-                <div class="flex mt-8 gap-3">
+                <div class="flex flex-col sm:flex-row mt-8 gap-3 justify-center lg:justify-start">
                     <a href="Shop.html"
-                        class="bg-[#3777BF] px-8 py-3 font-bold text-black rounded-full hover:bg-[#4996ED] transition cursor-pointer">
+                        class="bg-[#3777BF] px-8 py-3 font-bold text-black rounded-full hover:bg-[#4996ED] transition cursor-pointer text-center">
                         Shop Now
                     </a>
                     <button
@@ -44,129 +44,129 @@
 
                 </div>
             </div>
-            <div ><img src="img/image 25.png" alt=""></div>
+            <div class="flex justify-center"><img src="img/image 25.png" class="w-full max-w-md" alt=""></div>
 
         </div>
     </main>
 
-    <div class="ml-30 mr-30 mt-[88px]">
-        <div class="flex justify-between">
-            <div class=" ">
-                <img src="img/Rectangle 11.png" alt="">
-                <h1 class=" text-[12px] mt-[30px]">Beginner friendly outfit by Heng Sreyka on Dec 03, 2025</h1>
+    <div class="px-4 md:ml-30 md:mr-30 mt-10 md:mt-[88px]">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
+            <div>
+                <img src="img/Rectangle 11.png" class="w-full h-auto" alt="">
+                <h1 class="text-[12px] mt-[30px]">Beginner friendly outfit by Heng Sreyka on Dec 03, 2025</h1>
             </div>
-            <div class=" ">
-                <img src="img/Rectangle 13.png" alt="">
-                <h1 class=" text-[12px] mt-[30px]">Beginner friendly outfit by Heng Sreyka on Dec 03, 2025</h1>
+            <div>
+                <img src="img/Rectangle 13.png" class="w-full h-auto" alt="">
+                <h1 class="text-[12px] mt-[30px]">Beginner friendly outfit by Heng Sreyka on Dec 03, 2025</h1>
             </div>
-            <div class=" ">
-                <img src="img/Rectangle 12.png" alt="">
-                <h1 class=" text-[12px] mt-[30px]">Beginner friendly outfit by Heng Sreyka on Dec 03, 2025</h1>
-            </div>
-        </div>
-        <div class="mt-[62px] flex justify-between">
-            <div class=" ">
-                <img src="img/Rectangle 14.png" alt="">
-                <h1 class=" text-[12px] mt-[30px]">Beginner friendly outfit by Heng Sreyka on Dec 03, 2025</h1>
-            </div>
-            <div class=" ">
-                <img src="img/Rectangle 16.png" alt="">
-                <h1 class=" text-[12px] mt-[30px]">Beginner friendly outfit by Heng Sreyka on Dec 03, 2025</h1>
-            </div>
-            <div class=" ">
-                <img src="img/Rectangle 15.png" alt="">
-                <h1 class=" text-[12px] mt-[30px]">Beginner friendly outfit by Heng Sreyka on Dec 03, 2025</h1>
+            <div>
+                <img src="img/Rectangle 12.png" class="w-full h-auto" alt="">
+                <h1 class="text-[12px] mt-[30px]">Beginner friendly outfit by Heng Sreyka on Dec 03, 2025</h1>
             </div>
         </div>
-        <div class="mt-[62px] flex justify-between">
-            <div class=" ">
-                <img src="img/Rectangle 17.png" alt="">
-                <h1 class=" text-[12px] mt-[30px]">Beginner friendly outfit by Heng Sreyka on Dec 03, 2025</h1>
+        <div class="mt-10 md:mt-[62px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
+            <div>
+                <img src="img/Rectangle 14.png" class="w-full h-auto" alt="">
+                <h1 class="text-[12px] mt-[30px]">Beginner friendly outfit by Heng Sreyka on Dec 03, 2025</h1>
             </div>
-            <div class=" ">
-                <img src="img/Rectangle 19.png" alt="">
-                <h1 class=" text-[12px] mt-[30px]">Beginner friendly outfit by Heng Sreyka on Dec 03, 2025</h1>
+            <div>
+                <img src="img/Rectangle 16.png" class="w-full h-auto" alt="">
+                <h1 class="text-[12px] mt-[30px]">Beginner friendly outfit by Heng Sreyka on Dec 03, 2025</h1>
             </div>
-            <div class=" ">
-                <img src="img/Rectangle 18.png" alt="">
-                <h1 class=" text-[12px] mt-[30px]">Beginner friendly outfit by Heng Sreyka on Dec 03, 2025</h1>
+            <div>
+                <img src="img/Rectangle 15.png" class="w-full h-auto" alt="">
+                <h1 class="text-[12px] mt-[30px]">Beginner friendly outfit by Heng Sreyka on Dec 03, 2025</h1>
+            </div>
+        </div>
+        <div class="mt-10 md:mt-[62px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
+            <div>
+                <img src="img/Rectangle 17.png" class="w-full h-auto" alt="">
+                <h1 class="text-[12px] mt-[30px]">Beginner friendly outfit by Heng Sreyka on Dec 03, 2025</h1>
+            </div>
+            <div>
+                <img src="img/Rectangle 19.png" class="w-full h-auto" alt="">
+                <h1 class="text-[12px] mt-[30px]">Beginner friendly outfit by Heng Sreyka on Dec 03, 2025</h1>
+            </div>
+            <div>
+                <img src="img/Rectangle 18.png" class="w-full h-auto" alt="">
+                <h1 class="text-[12px] mt-[30px]">Beginner friendly outfit by Heng Sreyka on Dec 03, 2025</h1>
             </div>
         </div>
     </div>
 
-     <div class="mt-[129px] text-center">
-            <h1 class="text-[36px]">Testimonials</h1>
-            <p class="text-[#888888] font-bold insstrument sans text-[16px] mt-[27px]">Lorem ipsum dolor sit amet
-                consectetur adipisicing Voluptatum fuga . <br>
-                Lorem ipsum dolor sit amet Voluptatum fuga . Lorem ipsum dolor sit <br>
-                amet consectetur adipisicing Voluptatum fugLorem ipsum dolor sit <br>
+     <div class="mt-20 md:mt-[129px] text-center px-4">
+            <h1 class="text-2xl md:text-[36px]">Testimonials</h1>
+            <p class="text-[#888888] font-bold insstrument sans text-sm md:text-[16px] mt-[27px]">Lorem ipsum dolor sit amet
+                consectetur adipisicing Voluptatum fuga .
+                Lorem ipsum dolor sit amet Voluptatum fuga . Lorem ipsum dolor sit
+                amet consectetur adipisicing Voluptatum fugLorem ipsum dolor sit
                 amet consectetur
             </p>
-            <img src="img/dylan.png" class="rounded-full ml-[735px] mt-5 " alt="">
+            <img src="img/dylan.png" class="rounded-full mx-auto mt-5 w-24 md:w-auto" alt="">
         </div>
 
-        <div class="ml-30 flex gap-[233px] ">
+        <div class="px-4 md:ml-30 flex flex-col lg:flex-row gap-10 lg:gap-[233px] mt-20">
             <div class="">
-                <div class="flex gap-2 mt-[325px]">
+                <div class="flex gap-2 mt-10 md:mt-[325px] justify-center lg:justify-start">
                     <img src="img/mg.png" alt="">
                     <h3 class="text-[#685498] font-semibold text-[16px]">Subscribe to Newsletter</h3>
                 </div>
-                <div class="flex gap-5">
+                <div class="flex flex-col sm:flex-row gap-5 justify-center lg:justify-start">
                     <div class="mt-5">
                         <input type="email" id="email" name="email"
-                            class="py-1 px-5 outline-none rounded-[10px] border-2 border-[#685498] text-black bg-white"
+                            class="py-1 px-5 outline-none rounded-[10px] border-2 border-[#685498] text-black bg-white w-full sm:w-auto"
                             placeholder="Enter your email">
                     </div>
                     <div class="mt-5">
                         <input type="email" id="email" name="email"
-                            class="py-1 px-5 outline-none border-2 rounded-[10px] border-[#685498] text-black bg-white"
+                            class="py-1 px-5 outline-none border-2 rounded-[10px] border-[#685498] text-black bg-white w-full sm:w-auto"
                             placeholder="Enter your email">
                     </div>
-                    <button class="bg-[#4655FE] px-[20px] py-[20px] rounded-[15px]"><img src="img/sent.png"
+                    <button class="bg-[#4655FE] px-[20px] py-[20px] rounded-[15px] mt-5 mx-auto sm:mx-0"><img src="img/sent.png"
                             alt=""></button>
                 </div>
             </div>
 
-            <div class="mt-[62px]"><img src="img/rr.png" alt=""></div>
+            <div class="mt-10 md:mt-[62px] flex justify-center"><img src="img/rr.png" class="w-full max-w-md" alt=""></div>
         </div>
 
-        <div class="ml-30 mt-[71px]">
-            <h3 class="text-4xl text-[#351FFF] font-bold italic ">Kaysen.</h3>
-            <div class="mt-[24px] flex gap-[176px]">
+        <div class="px-4 md:ml-30 mt-10 md:mt-[71px]">
+            <h3 class="text-3xl md:text-4xl text-[#351FFF] font-bold italic">Kaysen.</h3>
+            <div class="mt-[24px] flex flex-col lg:flex-row gap-10 lg:gap-[176px]">
                 <div>
-                    <p class="text-[#888888] font-bold insstrument sans text-[16px] mt-[27px]">Lorem ipsum dolor sit
-                        amet <br>
-                        consectetur adipisicing Voluptatum <br>
-                        fuga . Lorem ipsum dolor sit amet <br>
-                        consectetur adipisicing Voluptatum <br>
-                        fuga .Lorem ipsum dolor sit amet <br>
-                        consectetur adipisicing <br>
+                    <p class="text-[#888888] font-bold insstrument sans text-sm md:text-[16px] mt-[27px]">Lorem ipsum dolor sit
+                        amet
+                        consectetur adipisicing Voluptatum
+                        fuga . Lorem ipsum dolor sit amet
+                        consectetur adipisicing Voluptatum
+                        fuga .Lorem ipsum dolor sit amet
+                        consectetur adipisicing
                         Voluptatumfuga . </p>
-                    <div class="flex gap-4 mt-[24px]">
+                    <div class="flex gap-4 mt-[24px] justify-center lg:justify-start">
                         <a href=" "><img src="img/facebook.png" alt=""></a>
                         <a href=" "><img src="img/twitter.png" alt=""></a>
                         <a href=" "><img src="img/insta.png" alt=""></a>
                     </div>
                 </div>
-                <div class="flex gap-[118px]">
-                    <div class="text-[#888888] font-bold insstrument sans text-[16px] mt-[27px]">
+                <div class="flex flex-wrap gap-10 md:gap-[118px] justify-center lg:justify-start">
+                    <div class="text-[#888888] font-bold insstrument sans text-sm md:text-[16px] mt-[27px]">
                         <h3>Lorem ipsum</h3>
                         <h3> ipsum</h3>
                         <h3>Lorem ipsum</h3>
                         <h3>Lorem ipsum</h3>
                     </div>
-                    <div class="text-[#888888] font-bold insstrument sans text-[16px] mt-[27px]">
+                    <div class="text-[#888888] font-bold insstrument sans text-sm md:text-[16px] mt-[27px]">
                         <h3>Lorem</h3>
                         <h3> ipsum</h3>
                         <h3>Lorem ipsum</h3>
                     </div>
-                    <div class="text-[#888888] font-bold insstrument sans text-[16px] mt-[27px]">
+                    <div class="text-[#888888] font-bold insstrument sans text-sm md:text-[16px] mt-[27px]">
                         <h3> ip </h3>
                         <h3> Loren</h3>
                         <h3> ipsum</h3>
                         <h3>Lorem ipsum</h3>
                     </div>
-                    <div class="text-[#888888] font-bold insstrument sans text-[16px] mt-[27px]">
+                    <div class="text-[#888888] font-bold insstrument sans text-sm md:text-[16px] mt-[27px]">
                         <h3>Lorem </h3>
                         <h3> ipsum</h3>
                         <h3>Lorem ipsum</h3>
@@ -174,11 +174,11 @@
                 </div>
             </div>
 
-            <footer class="text-[#888888] font-bold insstrument sans text-[16px] mt-[55px] flex justify-between">
+            <footer class="text-[#888888] font-bold insstrument sans text-xs md:text-[16px] mt-[55px] flex flex-col md:flex-row justify-between gap-4 pb-8">
                 <div>
                     <h3>Copyright@2025. All Rights Reserved-Designed with love by Designer.com</h3>
                 </div>
-                <div class="flex gap-6">
+                <div class="flex flex-col sm:flex-row gap-4 md:gap-6">
                     <h3>Terms & Conditions </h3>
                     <h3>Primary Privacy</h3>
                 </div>

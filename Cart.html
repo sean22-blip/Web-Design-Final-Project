@@ -5,41 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
 
 <body class="bg-gray-300">
-    <main class="flex items-center justify-center mt-50 ">
-        <div class="bg-white w-[50em] h-[45em] ">
-            <div class="flex gap-[30em] ml-10 font-bold mt-[4em] ">
+    <main class="flex flex-col lg:flex-row items-center justify-center mt-10 md:mt-50 px-4 lg:px-0 gap-4 lg:gap-0">
+        <div class="bg-white w-full lg:w-[50em] h-auto lg:h-[45em] pb-8 lg:pb-0">
+            <div class="flex flex-col sm:flex-row gap-4 sm:gap-10 lg:gap-[30em] ml-4 md:ml-10 font-bold mt-8 md:mt-[4em]">
                 <p>Shopping Cart</p>
                 <p id="itmAmount">Items Amount</p>
             </div>
-            <hr class="w-[90%] ml-[2em] mt-[2em] text-gray-400  ">
-            <h1 class="text-[10px] font-bold text-gray-400 ml-10 mt-[2em]">PRODUCT DETAILS</h1>
-            <div class="hover:cursor-pointer mt-[29em]">
-                <a class="ml-10 text-blue-600 font-bold text-sm hover:text-blue-500" href="Shop.html">← Continue
+            <hr class="w-[90%] ml-4 md:ml-[2em] mt-8 md:mt-[2em] text-gray-400">
+            <h1 class="text-[10px] font-bold text-gray-400 ml-4 md:ml-10 mt-8 md:mt-[2em]">PRODUCT DETAILS</h1>
+            <div class="hover:cursor-pointer mt-10 lg:mt-[29em]">
+                <a class="ml-4 md:ml-10 text-blue-600 font-bold text-sm hover:text-blue-500" href="Shop.html">← Continue
                     Shopping</a>
             </div>
         </div>
-        <div class=" bg-gray-100 w-[20em] h-[45em] flex-end"><!-- the right side of the cart -->
-            <p class="ml-10 mt-[4em] font-bold ">Order Summary</p>
-            <hr class="w-[80%] ml-[2em] mt-[2em] text-gray-400  ">
-            <div class="ml-9 mt-4 text-[15px]">
-                <div class="flex font-bold">
-                    <p class="text-gray-700  font-bold">ITEMS: 0</p>
-                    <p class="ml-[11em]">$0.00</p>
+        <div class="bg-gray-100 w-full lg:w-[20em] h-auto lg:h-[45em] pb-8 lg:pb-0"><!-- the right side of the cart -->
+            <p class="ml-4 md:ml-10 mt-8 md:mt-[4em] font-bold">Order Summary</p>
+            <hr class="w-[80%] ml-4 md:ml-[2em] mt-8 md:mt-[2em] text-gray-400">
+            <div class="ml-4 md:ml-9 mt-4 text-[15px] px-4 lg:px-0">
+                <div class="flex font-bold justify-between lg:justify-start">
+                    <p class="text-gray-700 font-bold">ITEMS: 0</p>
+                    <p class="lg:ml-[11em]">$0.00</p>
                 </div>
                 <p class="text-gray-700 font-bold mt-[1em]">SHIPPING</p>
-                <select class="bg-white font-bold text-gray-400 pl-2 pt-2 pb-2 pr-12 mt-[1em]  hover:cursor-pointer" id="item" onchange="updateTotal()">
+                <select class="bg-white font-bold text-gray-400 pl-2 pt-2 pb-2 pr-4 lg:pr-12 mt-[1em] hover:cursor-pointer w-full lg:w-auto" id="item" onchange="updateTotal()">
                     <option id="standard" value="5.00">Standard Delivery - $5.00</option>
                     <option id="fast" value="10.00">Fast Shipping - $10.00</option>
                     <option id="express" value="15.00">Express delivery - $15.00</option>
                 </select>
                 <p class="text-gray-700 font-bold mt-[1em]">INTERNATIONAL SHIPPING</p>
                 <label for="item"></label>
-                <select class="bg-white font-bold text-gray-400 pl-2 pt-2 pb-2 pr-[6.5em] mt-[1em] hover:cursor-pointer">
+                <select class="bg-white font-bold text-gray-400 pl-2 pt-2 pb-2 pr-4 lg:pr-[6.5em] mt-[1em] hover:cursor-pointer w-full lg:w-auto">
                     <option class="">Cambodia</option>
                     <option>India</option>
                     <option>Brazil</option>
@@ -48,20 +48,20 @@
                 </select>
                 <div class="text-gray-700 font-bold mt-[1em]">
                     <label for="promo">PROMO CODE</label>
-                    <input type="text" id="promo" name="promo" class="mt-[1em] bg-white pr-12 pt-2 pb-2 pl-2"
+                    <input type="text" id="promo" name="promo" class="mt-[1em] bg-white pr-4 lg:pr-12 pt-2 pb-2 pl-2 w-full lg:w-auto"
                         placeholder="Enter your code">
                 </div>
-                <button class="bg-[#FF6347] mt-[2em] text-white pl-5 pt-2 pb-2 pr-6 hover:cursor-pointer hover:bg-[#be123c] hover:border-white transition cursor-pointer border-2 border-red-400">APPLY</button>
+                <button class="bg-[#FF6347] mt-[2em] text-white pl-5 pt-2 pb-2 pr-6 hover:cursor-pointer hover:bg-[#be123c] hover:border-white transition cursor-pointer border-2 border-red-400 w-full lg:w-auto">APPLY</button>
             </div>
-            <hr class="w-[80%] ml-[2em] mt-[2em] text-gray-400  ">
-            <div class="flex ml-10 mt-[2em] font-bold text-gray-700 ">
+            <hr class="w-[80%] ml-4 md:ml-[2em] mt-[2em] text-gray-400">
+            <div class="flex ml-4 md:ml-10 mt-[2em] font-bold text-gray-700">
                 <p class="">Total:</p>
                 <p class="ml-[9em]">$</p>
                 <p id="total">0.00</p>
             </div>
             <a href="qr.html"> 
-            <div class="flex items-center justify-center text-center mt-[2em] text-sm">
-                <button class="bg-[#7c3aed] text-white font-semibold px-[7em] py-3 text-center hover:cursor-pointer hover:bg-[#5b21b6]  hover:border-white transition cursor-pointer border-2 border-[#6d28d9]">CHECKOUT</button>
+            <div class="flex items-center justify-center text-center mt-[2em] text-sm px-4 lg:px-0">
+                <button class="bg-[#7c3aed] text-white font-semibold px-10 lg:px-[7em] py-3 text-center hover:cursor-pointer hover:bg-[#5b21b6] hover:border-white transition cursor-pointer border-2 border-[#6d28d9] w-full lg:w-auto">CHECKOUT</button>
             </div>
             </a>
         </div>

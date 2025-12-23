@@ -5,65 +5,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign in</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-    <div class="flex gap-32">
-        <div class="flex   ">
-            <a href="Home.html">
-        <div class="flex justify-center items-center w-[5em] h-[5em]   rounded-full border-5 border-gray-600">
-            <img class="w-7 h-7" src="/img/arrow.png">
+    <div class="flex flex-col lg:flex-row gap-10 lg:gap-32 px-4 lg:px-0">
+        <div class="flex flex-col lg:flex-row items-start lg:items-start">
+            <a href="Home.html" class="mb-6 lg:mb-0">
+        <div class="flex justify-center items-center w-[4em] h-[4em] lg:w-[5em] lg:h-[5em] rounded-full border-5 border-gray-600">
+            <img class="w-6 h-6 lg:w-7 lg:h-7" src="/img/arrow.png">
         </div>
         </a>
-            <main class="bg-[#4996ED]   ml-[10em] p-20 rounded-4xl">
+            <main class="bg-[#4996ED] lg:ml-[10em] p-6 md:p-10 lg:p-20 rounded-4xl w-full lg:w-auto">
                 <form>
-                    <h3 class="text-white text-5xl font-bold text-center font-Roboto">Create an account</h3>
-                    <h1 class="flex text-white text-3xl justify-center mt-5 font-thin">Already have an acccount?
-                        <p class="ml-5 text-black font-thin hover:text-blue-700 underline"><a href="Login.html">Login</a></p>
+                    <h3 class="text-white text-2xl md:text-4xl lg:text-5xl font-bold text-center font-Roboto">Create an account</h3>
+                    <h1 class="flex flex-col sm:flex-row text-white text-lg md:text-2xl lg:text-3xl justify-center mt-5 font-thin text-center">
+                        <span>Already have an acccount?</span>
+                        <p class="sm:ml-5 text-black font-thin hover:text-blue-700 underline"><a href="Login.html">Login</a></p>
                     </h1>
-                    <div class="flex  justify-between ml-[2.5em] mt-[8em] text-xl ">
-                        <div class="font-bold ">
+                    <div class="flex flex-col md:flex-row gap-6 md:gap-10 lg:justify-between lg:ml-[2.5em] mt-10 lg:mt-[8em] text-lg md:text-xl">
+                        <div class="font-bold w-full md:w-auto">
                             <label for="fName">First name</label><br>
-                            <input type="text" id="fName" class="outline-none" name="fName" >
+                            <input type="text" id="fName" class="outline-none w-full md:w-auto bg-transparent" name="fName" >
                             <hr class="w-[100%]">
                         </div>
-                        <div class="font-bold  ">
+                        <div class="font-bold w-full md:w-auto">
                             <label for="lName" class="outline-none" >Last name</label><br>
-                            <input type="text" id="lName" name="lName" >
+                            <input type="text" id="lName" class="w-full md:w-auto bg-transparent" name="lName" >
                             <hr class="w-[100%]">
                         </div>
                     </div>
-                    <div class="font-bold ml-[2.5em] text-xl mt-[1em]">
+                    <div class="font-bold lg:ml-[2.5em] text-lg md:text-xl mt-6 lg:mt-[1em]">
                         <label for="email"  >Email</label><br>
-                        <input type="email" id="email" class="outline-none" name="email" >
+                        <input type="email" id="email" class="outline-none w-full lg:w-auto bg-transparent" name="email" >
                         <hr class="w-[94%]">
                     </div>
-                    <div class="font-bold ml-[2.5em] text-xl mt-[2em] ">
+                    <div class="font-bold lg:ml-[2.5em] text-lg md:text-xl mt-8 lg:mt-[2em]">
                         <label for="password" class="outline-none">Password</label><br>
-                        <input type="password" id="password"   class="outline-none" name="password" >
+                        <input type="password" id="password" class="outline-none w-full lg:w-auto bg-transparent" name="password" >
                         <hr class="w-[94%]">
                     </div>
-                    <div class="flex justify-center mt-[4em]">
+                    <div class="flex justify-center mt-10 lg:mt-[4em]">
                         <button type="submit"
-                            class="text-white text-3xl font-bold bg-blue-800 px-[3em] py-5 rounded-[1em] hover:cursor-pointer hover:bg-blue-700  hover:border-blue-500 transition cursor-pointer border-2 border-blue-800">Create
+                            class="text-white text-lg md:text-2xl lg:text-3xl font-bold bg-blue-800 px-6 md:px-10 lg:px-[3em] py-4 lg:py-5 rounded-[1em] hover:cursor-pointer hover:bg-blue-700 hover:border-blue-500 transition cursor-pointer border-2 border-blue-800 w-full sm:w-auto">Create
                             account</button>
                     </div>
-                    <div class="mt-[5em] flex justify-center ">
-                        <hr class="w-[30%] ml-10 mr-5">
-                        <p class="text-xl font-bold">Or register with</p>
-                        <hr class="w-[30%] ml-5">
+                    <div class="mt-10 lg:mt-[5em] flex justify-center items-center">
+                        <hr class="w-[20%] md:w-[30%] ml-2 md:ml-10 mr-3 md:mr-5">
+                        <p class="text-sm md:text-lg lg:text-xl font-bold whitespace-nowrap">Or register with</p>
+                        <hr class="w-[20%] md:w-[30%] ml-3 md:ml-5">
                     </div>
-                    <div class="flex justify-center mt-[2em] text-center ">
-                        <button class="flex  px-[3em] py-[12px] text-3xl rounded-[1em] ml-[1em] hover:cursor-pointer hover:bg-gray-400  hover: transition cursor-pointer border-2 border-gray-800 "><img
-                                src="/img/Google.png" class="w-[1em] h-[1em] mr-5 mt-1">Google</button>
-                        <button class="flex  px-[3em] py-[12px] text-3xl rounded-[1em] ml-[1em] hover:cursor-pointer hover:bg-gray-400  hover: transition cursor-pointer border-2 border-gray-800"><img
-                                src="/img/Apple.png" class="w-[1em] h-[1em] mr-5 mt-1">Apple</button>
+                    <div class="flex flex-col sm:flex-row justify-center mt-6 lg:mt-[2em] text-center gap-4">
+                        <button class="flex items-center justify-center px-6 md:px-10 lg:px-[3em] py-3 lg:py-[12px] text-xl md:text-2xl lg:text-3xl rounded-[1em] hover:cursor-pointer hover:bg-gray-400 transition cursor-pointer border-2 border-gray-800"><img
+                                src="/img/Google.png" class="w-6 h-6 lg:w-[1em] lg:h-[1em] mr-3 lg:mr-5">Google</button>
+                        <button class="flex items-center justify-center px-6 md:px-10 lg:px-[3em] py-3 lg:py-[12px] text-xl md:text-2xl lg:text-3xl rounded-[1em] hover:cursor-pointer hover:bg-gray-400 transition cursor-pointer border-2 border-gray-800"><img
+                                src="/img/Apple.png" class="w-6 h-6 lg:w-[1em] lg:h-[1em] mr-3 lg:mr-5">Apple</button>
                     </div>
                 </form>
             </main>
         </div>
-        <img src="img/image 2.png" alt="">
+        <img src="img/image 2.png" class="hidden lg:block w-full max-w-2xl" alt="">
     </div>
     <script src="Index.js"></script>
 </body>
